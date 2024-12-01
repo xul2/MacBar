@@ -1,64 +1,62 @@
-.platform-win .typeWindows_a934d8 {
-    z-index: 102;
-    position: absolute;
-    flex-direction: row;
-    align-items: center;
-    top: 1px;
-    width: 100%;
-    margin: 0;
-    padding-top: 12px;
-    padding-right: 9px;
-    padding-left: 3px;
-    -webkit-app-region: drag;
+ .platform-win .typeWindows_a934d8 {
+  z-index: 1000;
+  position: fixed;
+  top: 5px;  /* Added px unit */
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;  /* Changed from 100% to auto */
+  height: 30px;
+  margin: 0;
+  padding: 0 9px 0 3px;
+  -webkit-app-region: drag;
+  background-color: var(--background-primary);
 }
 
-.platform-win .typeWindows_a934d8 .wordmark_a934d8 {
-    top: 11px;
-    left: 11px;
-    width: 52px;
-    height: 12px;
-    padding: 0;
-    -webkit-app-region: no-drag;
-}
-
-.platform-win .typeWindows_a934d8 .wordmark_a934d8 g {
-    display: none;
+.platform-win .typeWindows_a934d8 > .wordmark_a934d8 {
+  display: none;
 }
 
 .platform-win .typeWindows_a934d8 .winButton_a934d8 {
-    width: 12px;
-    height: 12px;
-    margin-left: 8px;
-    border-radius: 15px;
-    background-color: var(--background-primary);
-    background-size: 0;
-    -webkit-app-region: no-drag;
+  z-index: 1001;
+  width: 12px;
+  height: 10px;
+  margin-left: 8px;
+  border-radius: 15px;
+  background-color: var(--background-primary);
+  background-size: 0;
+  -webkit-app-region: no-drag;
+}
+
+.platform-win .typeWindows_a934d8 .winButton_a934d8:hover {
+  background-color: var(--background-modifier-hover);
 }
 
 .platform-win .typeWindows_a934d8 .winButton_a934d8 svg {
-    display: none;
+  display: none;
 }
 
 .platform-win.app-focused .typeWindows_a934d8:hover div.winButton_a934d8 {
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .platform-win.app-focused .typeWindows_a934d8 .winButtonClose_a934d8 {
-    background-color: #ff5c57;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuMjkyODkgNkwyLjgxODAxIDMuNTI1MTNMMy41MjUxMiAyLjgxODAyTDUuOTk5OTkgNS4yOTI4OUw4LjQ3NDg3IDIuODE4MDJMOS4xODE5NyAzLjUyNTEzTDYuNzA3MSA2TDkuMTgxOTcgOC40NzQ4N0w4LjQ3NDg3IDkuMTgxOThMNS45OTk5OSA2LjcwNzExTDMuNTI1MTIgOS4xODE5OEwyLjgxODAxIDguNDc0ODdMNS4yOTI4OSA2WiIgZmlsbD0iI0EyMDAwOCIvPgo8L3N2Zz4=);
+  background-color: #ff5c57;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuMjkyODkgNkwyLjgxODAxIDMuNTI1MTNMMy41MjUxMiAyLjgxODAyTDUuOTk5OTkgNS4yOTI4OUw4LjQ3NDg3IDIuODE4MDJMOS4xODE5NyAzLjUyNTEzTDYuNzA3MSA2TDkuMTgxOTcgOC40NzQ4N0w4LjQ3NDg3IDkuMTgxOThMNS45OTk5OSA2LjcwNzExTDMuNTI1MTIgOS4xODE5OEwyLjgxODAxIDguNDc0ODdMNS4yOTI4OSA2WiIgZmlsbD0iI0EyMDAwOCIvPgo8L3N2Zz4=);
 }
 
 .platform-win.app-focused .typeWindows_a934d8 .winButtonMinMax_a934d8:nth-child(2n) {
-    background-color: #fdbd3d;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDUuMzk5OTlIMlY2LjU5OTk5SDEwVjUuMzk5OTlaIiBmaWxsPSIjQjM3MTFBIi8+Cjwvc3ZnPg==);
+  background-color: #fdbd3d;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDUuMzk5OTlIMlY2LjU5OTk5SDEwVjUuMzk5OTlaIiBmaWxsPSIjQjM3MTFBIi8+Cjwvc3ZnPg==);
 }
 
 .platform-win.app-focused .typeWindows_a934d8 .winButtonMinMax_a934d8:nth-child(3n) {
-    order: 3;
-    background-color: #26c84b;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuMzkyOTMgMy4wMDg5M0wzLjAwODg3IDcuMzkyOTlMMi44MTc5NSAyLjgxODAxTDcuMzkyOTMgMy4wMDg5M1oiIGZpbGw9IiMwMjZBMTUiLz4KPHBhdGggZD0iTTQuNjA2OTUgOC45OTEwMUw4Ljk5MTAxIDQuNjA2OTVMOS4xODE5MyA5LjE4MTkzTDQuNjA2OTUgOC45OTEwMVogIiBmaWxsPSIjMDI2QTE1Ii8+Cjwvc3ZnPg==);
+  order: 3;
+  background-color: #26c84b;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuMzkyOTMgMy4wMDg5M0wzLjAwODg3IDcuMzkyOTlMMi44MTc5NSAyLjgxODAxTDcuMzkyOTMgMy4wMDg5M1oiIGZpbGw9IiMwMjZBMTUiLz4KPHBhdGggZD0iTTQuNjA2OTUgOC45OTEwMUw4Ljk5MTAxIDQuNjA2OTVMOS4xODE5MyA5LjE4MTkzTDQuNjA2OTUgOC45OTEwMVogIiBmaWxsPSIjMDI2QTE1Ii8+Cjwvc3ZnPg==);
 }
 
 html.platform-osx .macButtons-2MuSAC {
@@ -68,28 +66,27 @@ html.platform-osx .macButtons-2MuSAC {
   background: rgb(0, 0, 0, var(--serverlist-brightness));
   width: 72px;
   border-top-left-radius: var(--window-roundness);
-  z-index: 10;
+  z-index: 1000; /* Increased z-index */
 }
 
 html.platform-osx .wrapper-1Rf91z {
-  margin-top: 45px; /* Decreased from 55px */
+  margin-top: 45px;
 }
 
 html.platform-osx .scroller-2TZvBN {
-  padding-top: 30px; /* Decreased from 35px */
+  padding-top: 30px;
 }
 
 #app-mount .guilds_a4d4d9 {
   background-color: transparent;
-  margin-top: 15px; /* Decreased from 20px */
+  margin-top: 0px;
 }
 
 #app-mount .guilds_a4d4d9 .scrollerBase_c49869 {
   background-color: rgb(0, 0, 0, var(--serverlist-brightness));
-  padding-top: 8px; /* Decreased from 10px */
+  padding-top: 8px;
 }
 
-/* Adjust the Discord logo/home button position */
 #app-mount .guilds_a4d4d9 .tutorialContainer_f9623d {
-  margin-top: 12px; /* Decreased from 15px */
+  margin-top: 10px;
 }
