@@ -60,3 +60,36 @@
     background-color: #26c84b;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuMzkyOTMgMy4wMDg5M0wzLjAwODg3IDcuMzkyOTlMMi44MTc5NSAyLjgxODAxTDcuMzkyOTMgMy4wMDg5M1oiIGZpbGw9IiMwMjZBMTUiLz4KPHBhdGggZD0iTTQuNjA2OTUgOC45OTEwMUw4Ljk5MTAxIDQuNjA2OTVMOS4xODE5MyA5LjE4MTkzTDQuNjA2OTUgOC45OTEwMVogIiBmaWxsPSIjMDI2QTE1Ii8+Cjwvc3ZnPg==);
 }
+
+html.platform-osx .macButtons-2MuSAC {
+  position: absolute;
+  top: var(--window-padding);
+  left: var(--window-padding);
+  background: rgb(0, 0, 0, var(--serverlist-brightness));
+  width: 72px;
+  border-top-left-radius: var(--window-roundness);
+  z-index: 10;
+}
+
+html.platform-osx .wrapper-1Rf91z {
+  margin-top: 45px; /* Decreased from 55px */
+}
+
+html.platform-osx .scroller-2TZvBN {
+  padding-top: 30px; /* Decreased from 35px */
+}
+
+#app-mount .guilds_a4d4d9 {
+  background-color: transparent;
+  margin-top: 15px; /* Decreased from 20px */
+}
+
+#app-mount .guilds_a4d4d9 .scrollerBase_c49869 {
+  background-color: rgb(0, 0, 0, var(--serverlist-brightness));
+  padding-top: 8px; /* Decreased from 10px */
+}
+
+/* Adjust the Discord logo/home button position */
+#app-mount .guilds_a4d4d9 .tutorialContainer_f9623d {
+  margin-top: 12px; /* Decreased from 15px */
+}
